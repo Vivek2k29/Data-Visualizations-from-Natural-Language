@@ -38,31 +38,4 @@ This project combines several key technologies to create a seamless experience:
 
 ---
 
-## ⚙️ How to Run Locally
-
-To run this project on your own machine, follow these steps:
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/Vivek2k29/Genvis.git](https://github.com/Vivek2k29/Genvis.git)
-    cd Genvis
-    ```
-
-2.  **Install the required packages:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3.  **Set up your API Key:**
-    * Create a file named `.env` in the root of the project.
-    * Add your OpenAI API key to it:
-        ```
-        OpenAI_API_KEY="your_api_key_here"
-        ```
-
-4.  **Run the app:**
-    ```bash
-    streamlit run app.py
-    ```
-
-Your app will now be running at `http://localhost:8501`.
+.
