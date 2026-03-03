@@ -5,7 +5,7 @@ Welcome to Genvis, a multi-functional web application built with Streamlit that 
 **Live App:** Under Process
 
 
-[Image of the Genvis app interface]
+
 
 ---
 
