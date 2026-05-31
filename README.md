@@ -1,41 +1,166 @@
-# 🚀 Genvis: The All-in-One Generative AI Hub
+# 📊 Data Visualizations from Natural Language
 
-Welcome to Genvis, a multi-functional web application built with Streamlit that harnesses the power of Google's Gemini models. This app serves as a central dashboard to interact with generative AI in various ways, from conversational chat and image analysis to in-depth document Q&A.
+An AI-powered data analytics application that transforms natural language queries into interactive visualizations using Google Gemini and Plotly.
 
-**Live App:** Under Process
+## 🚀 Live Demo
 
-
-
+https://data-visualizations-from-natural-languagegit.streamlit.app/
 
 ---
 
 ## ✨ Features
 
-Genvis is organized into several key modules, accessible from the sidebar:
+### 📂 Multi-Format Data Upload
 
-* **💬 Chat with Gemini:** A conversational chatbot interface powered by the Gemini Pro model. Ask questions, brainstorm ideas, write code, or get summaries of complex topics.
-* **🖼️ Image Playground:** Leverages the Gemini Pro Vision model to understand and analyze images. You can upload an image and ask questions about it, such as "What's happening in this picture?" or "Extract the text from this sign."
-* **📄 PDF-based Q&A:** A powerful **Retrieval-Augmented Generation (RAG)** system. You can upload your own PDF document, and the app will:
-    1.  Extract the text.
-    2.  Break it into intelligent chunks.
-    3.  Convert those chunks into vector embeddings.
-    4.  Store them in a vector database.
-    
-    You can then ask specific questions, and the AI will answer based *only* on the content of your document.
+* CSV files
+* Excel files (.xlsx, .xls)
+* PDF files
+
+### 🧹 Automatic Data Cleaning
+
+* Duplicate removal
+* Missing value handling using KNN Imputer
+* Categorical data encoding
+* Dataset quality reporting
+
+### ⏳ Time-Series Detection
+
+* Automatic datetime column detection
+* Time-series dataset recognition
+* Trend analysis support
+* Line chart recommendations
+
+### 📊 AI-Powered Visualization Generation
+
+Ask questions in natural language such as:
+
+* Show sales trend over time
+* Create a histogram of age
+* Scatter plot of income vs expenses
+* Bar chart of category and revenue
+
+The application automatically generates Plotly visualizations using Google Gemini AI.
+
+### 💡 Visualization Suggestions
+
+The system automatically recommends:
+
+* Scatter plots
+* Line charts
+* Bar charts
+* Histograms
+* Count plots
+
+### 📈 Interactive Charts
+
+* Zoom and pan
+* Hover information
+* Responsive design
+* Download charts as PNG
+
+### 🌙 Modern UI
+
+* Dark mode
+* Light mode
+* Responsive dashboard
 
 ---
 
 ## 🛠️ Tech Stack
 
-This project combines several key technologies to create a seamless experience:
+### Frontend
 
-* **Framework:** [Streamlit](https://streamlit.io/)
-* **Generative AI:** [Google Gemini API (Gemini Pro & Gemini Pro Vision)](https://ai.google.dev/)
-* **Language Model Orchestration:** [LangChain](https://www.langchain.com/) (for RAG pipeline)
-* **PDF Processing:** `PyPDF2`
-* **Vector Storage:** `faiss-cpu` (Facebook AI Similarity Search)
-* **Core:** `Python` & `python-dotenv`
+* Streamlit
+
+### Data Processing
+
+* Pandas
+* NumPy
+* Scikit-learn
+
+### Visualization
+
+* Plotly Express
+* Kaleido
+
+### AI Integration
+
+* Google Gemini API
+
+### File Processing
+
+* PyPDF
+* OpenPyXL
 
 ---
 
-.
+## 📂 Project Structure
+
+```text
+GenVis/
+│
+├── datasets/
+├── .streamlit/
+│   └── secrets.toml
+├── main.py
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/Vivek2k29/Data-Visualizations-from-Natural-Language.git
+
+cd Data-Visualizations-from-Natural-Language
+
+pip install -r requirements.txt
+```
+
+---
+
+## 🔑 Environment Setup
+
+Create:
+
+```text
+.streamlit/secrets.toml
+```
+
+Add:
+
+```toml
+API_KEY="YOUR_GEMINI_API_KEY"
+```
+
+---
+
+## ▶️ Run Locally
+
+```bash
+streamlit run main.py
+```
+
+---
+
+## 🚀 Deployment
+
+This project is deployed using Streamlit Community Cloud.
+
+Live Application:
+
+https://data-visualizations-from-natural-languagegit.streamlit.app/
+
+---
+
+## 👨‍💻 Author
+
+Vivek Arasam
+
+B.Tech | AI & Data Analytics Enthusiast
+
+GitHub:
+https://github.com/Vivek2k29
